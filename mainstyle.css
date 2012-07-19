@@ -1,0 +1,529 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*{
+	outline:1px dashed red;
+}*/
+
+@font-face {
+    font-family: "My Custom Font";
+    src: url('IranNastaliq.ttf') format("truetype");
+}
+
+body{
+	/*position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	z-index:-1;
+	
+	background-image:url('images/b1.jpg');
+	background-size:cover;
+*/	
+/*	font-family:Arial, Helvetica, sans-serif;*/
+    font-family: "My Custom Font";
+	font-size:25px;
+	color:#8e8e8e;
+	direction:rtl;
+	background-color:#5c5c5c;
+
+}
+
+.dot{
+	min-width:1367px;
+	width:auto !important;
+	width:100%;
+	min-height:100%;
+	height:auto !important;
+	height:100%;
+	
+	
+	position:fixed;
+	top:0;
+	left:0;
+	background-image:url('images/pattern_bg_40.png');
+}
+
+.top{
+	height:200px;/*maybe delete*/
+	width:100%;
+	position:fixed;
+	top:0px;
+	bottom:0;
+	z-index:2;
+	overflow:hidden;
+	
+	background-image:url('images/bg-menu.png');
+	
+	-webkit-transition:all 0.8s; /* Safari and Chrome */
+	-moz-transition:all 0.8s; /* FireFox */
+	-ms-transition:all 0.8s;/* IE */
+	-o-transition:all 0.8s;/* Opera */
+	transition:all 0.8s;/* Opera */
+}
+
+a.hide{
+	display:block;
+	width:88px;
+	height:24px;
+	float:right;
+	position:fixed;
+	top:0;
+	right:10px;
+	z-index:2;
+
+	background-image:url('images/show-hide.png');
+	background-repeat:no-repeat;
+}
+
+a.show{
+	display:block;
+	width:88px;
+	height:24px;
+	float:right;
+	position:fixed;
+	top:0px;
+	right:10px;
+	z-index:2;
+	visibility:hidden;
+	
+	background-image:url('images/show-hide.png');
+	background-repeat:no-repeat;
+	background-position:0 -24px;
+}
+/***************************************** MENU TOP **************************/
+.top .menu{
+	margin:0 auto;
+	margin-right:140px;
+	height:60px;
+}
+
+.top .menu ul{
+	list-style-type:none;
+	float:right;
+}
+
+.top .menu li{
+	float:right;
+
+	background-image:url('images/top_menu_li_bg_inactive.png');
+	background-repeat:no-repeat;
+}
+
+.top .menu li:last-child{
+	background:none;
+}
+
+.top .menu li a{
+	display:block;
+	padding:25px 0px 3px 6px;
+	margin-left:30px;
+	color:#8e8e8e;
+	text-decoration:none;
+	
+	-webkit-transition:all 1s;
+	-moz-transition:all 1s; /* FireFox */
+	-ms-transition:all 1s;/* IE */
+	-o-transition:all 1s;/* Opera */
+	transition:all 1s;/* Opera */
+	
+/*    font-family: "My Custom Font";*/
+	font-family:Tahoma, Geneva, sans-serif;
+	font-weight:bold;
+}
+
+.top .menu li:hover{
+	background-image:url('images/top_menu_li_bg_active.png');
+	background-repeat:no-repeat;
+}
+
+.menu li.nobg{
+	background:none;/*kar nermikonad*/
+}
+
+.menu li.nobg a{
+	color:#fff;
+}
+
+.top .menu li a:hover{
+	color:#fff;
+}
+
+.logo{
+	background-image:url('images/logosmal.png');
+
+	width:100px;
+	height:32px;
+	float:left;
+	position:absolute;
+	top:2px;
+	left:90px;
+	z-index:2;
+}
+
+.logo-title{
+	position:fixed;
+	top:360px;
+	right:330px;
+}
+/***************************************** END MENU TOP *********************/
+.content{
+	position:absolute;
+	bottom:0;
+	top:240px;
+	text-align:right;
+	color:#fff;
+	font-family: "My Custom Font";
+}
+
+.content p{
+	font-size:220px;
+}
+
+.content h1{
+	padding-right:120px;
+}
+
+.footer{
+	min-height:40px;/*maybe delete*/
+	position:fixed;
+	left:0;
+	bottom:0;
+	width:100%;
+}
+/************************************** MAIN BANNER ******************************************/ 
+/*-----start slider-----*/
+div.slider{
+	width:1366px;
+	height:666px;
+	overflow:hidden;
+	position:relative;
+}
+
+
+div.slider  > div{
+	position:absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	float: left;
+	width:1366px;
+	height:666px;
+	background-position: center top;
+}
+
+div.slider div.img1{
+	background-image: url('images/home_horton.jpg');
+	background-repeat: no-repeat;
+	width:1366px;
+	height:666px;
+	
+}
+
+div.slider div.img2{
+	background-image: url('images/7183_1-temp-XL.jpg');
+	background-repeat: no-repeat;
+	width:1366px;
+	height:666px;
+	
+}
+
+div.slider div.img3{
+	background-image: url('images/EagleHarLiving.png');
+	background-repeat: no-repeat;
+	width:1366px;
+	height:666px;
+	
+}
+
+div.slider div.img4{
+	background-image: url('images/b1.jpg');
+	background-repeat: no-repeat;
+	width:1366px;
+	height:666px;	
+}
+
+
+
+/*-----end slider-----*/
+
+/***************************************** START CSS ABOUT *****************************/
+/***************************************** START SUBMENU ABOUT *****************************/
+.menu ul ul{
+	float:left !important;
+	margin-top:-40px;
+}
+
+.menu li li{
+	float:none;
+	background:none !important;
+}
+
+.menu li.about{
+	width:400px;
+	text-align:right;
+}
+
+.menu  li.about > a{
+	color:#fff;
+}
+/***************************************** END SUBMENU ABOUT *****************************/
+/***************************************** START OCNTENT-ABOUT *****************************/
+div.content-about , .content-contact{
+	position:fixed;
+	top:200px;
+	right:250px;
+	min-height:350px;/*delete*/
+	overflow:hidden;/*delete*/
+}
+
+div.title-about{
+	position:fixed;
+	top:200px;
+	right:240px;
+	z-index:2;
+	overflow:hidden;
+	height:360px;
+	
+	-webkit-transition:all 2s;
+	-moz-transition:all 2s; /* FireFox */
+	-ms-transition:all 2s;/* IE */
+	-o-transition:all 2s;/* Opera */
+	transition:all 2s;/* Opera */
+}
+
+.share-property{
+	width:258px;
+	height:130px;
+	z-index:2;
+	opacity:0.4;
+	color:#fff;
+	text-align:justify;
+/*	font-family: "My Custom Font";*/
+	font-size:16px;
+		
+	-webkit-transition:all 1s;
+	-moz-transition:all 1s; /* FireFox */
+	-ms-transition:all 1s;/* IE */
+	-o-transition:all 1s;/* Opera */
+	transition:all 1s;/* Opera */
+}
+
+.share-property h2{
+	margin-top:140px;
+	text-align:right;
+	border-top:1px dotted #fff;
+	border-bottom:1px dotted #fff;
+	padding-bottom:15px;
+}
+
+.share-property p{
+	padding-top:5px;
+}
+
+div.environment{
+	background-image:url('images/environment.jpg');
+	background-repeat:no-repeat;
+	
+	float:right;
+}
+
+.curser:hover{
+	opacity:1;
+	cursor:pointer;
+}
+
+div.service{
+	background-image:url('images/service.png');
+	background-repeat:no-repeat;
+	
+	margin-right:288px;
+	padding-top:1px;
+
+}
+
+div.member{
+	background-image:url('images/member.jpg');
+	background-repeat:no-repeat;
+
+	float:left;	
+	margin-top:-130px;
+}
+
+.share-content{
+	opacity:0;
+	z-index:2;
+	color:#fff;
+	text-align:justify;
+	
+	-webkit-transition:all 1s;
+	-moz-transition:all 1s; /* FireFox */
+	-ms-transition:all 1s;/* IE */
+	-o-transition:all 1s;/* Opera */
+	transition:all 1s;/* Opera */
+}
+
+#content-service{
+	margin-top:-250px;
+}
+
+#content-member{
+	margin-top:-220px;
+}
+/************************************************************* END CSS ABOUT ******************************************/
+/*********************************************START CSS CONTENT CONATC ******************************************/
+.content-contact{
+	height:440px;
+	top:170px;
+}
+
+.buttom-top{
+	background-image:url('images/pil_opp_ansatte_liste.png');
+	background-repeat:no-repeat;
+	background-position:center top;
+	padding-top:1px;
+
+	height:25px;
+}
+
+div.timeline_seperator{
+	background:#ffffff;
+	height:1px;
+	width:100%;
+	margin:0px;
+	padding:0px;
+	overflow:hidden;
+	border:none;
+
+	filter:alpha(opacity=20);
+	-moz-opacity:0.20;
+	-khtml-opacity:0.20;
+	opacity:0.20
+}
+
+
+.center{
+	height:390px;
+}
+/*********************************************START CSS CONTENT CONATC MENU ******************************************/
+.center ul{
+	text-align:right;
+	width:830px;
+	height:390px;
+	overflow:hidden;
+	list-style-type:none;
+	position:fixed;
+	z-index:2;
+}
+
+.center li{
+	padding-right:20px;
+	height:55px;
+	width:810px;
+	cursor:pointer;
+}
+
+.center li a{
+	text-decoration:none;
+	color:#bbb;
+	display:block;
+	
+	-webkit-transition:all 1s;
+	-moz-transition:all 1s; /* FireFox */
+	-ms-transition:all 1s;/* IE */
+	-o-transition:all 1s;/* Opera */
+	transition:all 1s;/* Opera */
+}
+
+.center li:hover a{
+	color:#fff;
+	
+}
+
+.center li:hover{
+	background-image:url('images/doc_list2_arrow.png');
+	background-repeat:no-repeat;
+	background-position:center left;
+}
+
+.center li.header{
+	font-size:36px;
+	color:#8e8e8e;
+	padding-right:10px;
+	cursor:default;
+	
+	background:none;
+}
+/********************************************* END CSS CONTENT CONATC MENU ******************************************/
+.buttom-down{
+	background-image:url('images/pil_ned_ansatte_liste.png');
+	background-repeat:no-repeat;
+	background-position:center top;
+	
+	height:20px;
+}
+/*********************************************START CSS CONTENT CONATC PAGE EMIK ******************************************/
+.bg-emik{
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	
+	background-image:url('images/doc_21_1.jpg');
+	background-size:cover;
+}
+
+.text-emik{	
+	color:#FFF;
+	position:fixed;
+	top:200px;
+	text-align:right;
+	line-height:45px;
+	padding-right:140px;
+	z-index:3;
+	
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:25px;
+
+}
+/*********************************************END CSS CONTENT CONATC PAGE EMIK ******************************************/
+/*********************************************START CSS CONTENT CONATC PAGE 1-EMIK(...حسینی پور) ******************************************/
+.bg1-emik{
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	
+	background-image:url('images/doc_15_1.jpg');
+	background-size:cover;
+}
+/*********************************************END CSS CONTENT CONATC PAGE 1-EMIK(...حسینی پور) ******************************************/
+/*********************************************START CSS CONTENT CONATC PAGE 2-EMIK(...حسینی پور) ******************************************/
+.bg2-emik{
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	
+	background-image:url('images/doc_50_1.jpg');
+	background-size:cover;
+}
+/*********************************************END CSS CONTENT CONATC PAGE 2-EMIK(...حسینی پور) ******************************************/
+/*********************************************START CSS CONTENT CONATC PAGE 2-EMIK(...حسینی پور) ******************************************/
+.bg3-emik{
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	
+	background-image:url('images/doc_124_1.jpg');
+	background-size:cover;
+}
+/*********************************************END CSS CONTENT CONATC PAGE 2-EMIK(...حسینی پور) ******************************************/
+/*********************************************END CSS CONTENT CONATC ******************************************/
