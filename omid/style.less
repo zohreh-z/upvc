@@ -1,0 +1,189 @@
+header {
+	position :fixed;
+	top      :0;
+	left     :0;
+	right    :0;
+	z-index  :3;
+	opacity  :1;
+	height   :50px;
+	background-image:url(images/top_b1g.png);
+}
+
+section.slideshow{
+	h1.logo {
+		position :fixed;
+		right    :3%;
+		bottom   :90px;
+		width    :200px;
+		height   :65px;
+		overflow :hidden;
+		text-indent      :1000px;
+		white-space      :nowrap;
+/*		background-size  :100% 100%;
+		background-image :url(images/logo.png);*/
+
+	}
+
+	div.noise {
+		position :fixed;
+		top      :0;
+		left     :0;
+		right    :0;
+		bottom   :0;
+		z-index  :-1;
+
+		background-position :left top;
+		background-repeat   :repeat;
+		background-image    :url(images/picefct.png);
+	}
+
+	section.backimg{
+		div.slideshow {
+			position :fixed;
+			top      :0;
+			left     :0;
+			right    :0;
+			bottom   :0;
+			z-index  :-2;
+
+			background-position :center center;
+			background-repeat   :no-repeat;
+			background-size     :cover;
+		}
+	}
+}
+
+
+		/*********************MENU***************************/
+	section.nav-container{
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		z-index: 2;
+					
+		div.nav{
+			width:900px;
+			min-height:20px;
+			padding-top:1px;
+/*			background-color:#111;
+/*			border-radius:40px;*/
+/*			background:url(images/nav-bg.png) repeat-x;*/
+
+			div.logo{
+/*				background-image:url(images/logo.png);*/
+				background-size:100% 100%;
+				background-position:center top;
+				background-repeat:no-repeat;
+			  	width: 150px;
+			 	height: 60px;
+				float:left;
+				overflow:hidden;
+
+				h1{
+					text-indent:-50000px;
+					white-space: nowrap;
+				}
+			}
+			ul{
+/*				margin-top:10px;
+/*				width:590px;*/
+
+				li{
+					background-image:url(images/li-bg.png);
+					height:38px;
+					float:right;
+					margin-right:20px;
+					
+					a{
+						display:block;
+						padding-bottom:10px;
+						padding-top:10px;
+						text-decoration:none;
+						color:#FFF;
+						font-size:15px;
+						letter-spacing:2px;
+						font-family:"Times New Roman", Times, serif;
+						font-weight:bold;
+						text-align:center;
+						text-transform:capitalize;
+						text-shadow: 2px 2px 1px black;
+						
+
+						&:hover{
+							background-image:url(images/nav_hover.png);
+						}
+						&:active{
+							color:gray;
+						}
+					}
+				}
+
+			}
+
+		}
+
+	}
+
+
+		/*********************FOOTER***************************/
+
+footer {
+	position :fixed;
+	bottom   :0;
+	left     :0;
+	right    :0;
+	opacity  :1;
+	z-index  :2;
+	height   :45px;
+	color    :#222;
+
+	background-image  :url(images/bot_bg.png);
+	background-size   :contain;
+	background-repeat :repeat-x;
+
+	h1 {
+			padding: 10px 20px;
+			color: rgb(197, 183, 201);
+			letter-spacing: 3px;
+			font-size: 27px;
+			font-family: Georgia,"Times New Roman",Times,serif;
+		}
+
+
+	p {
+		padding: 20px 0px 40px 20px;
+		color          :#FFF;
+		font-size      :13px;
+		font-family    :Georgia, "Times New Roman", Times, serif;
+		text-transform: uppercase;
+		font-weight:bold;
+		text-shadow: 2px 2px 1px black;
+	}
+
+	div.social > div{
+		height:23px;
+		width:24px;
+		float: left;
+		background-repeat:no-repeat;
+		margin-left: 10px;
+		margin-top: 15px;
+		cursor: pointer;
+	}
+
+	div.social > div > div{
+		height:23px;
+		width:24px;
+		float: left;
+		display: none;
+	}
+
+	div.google{
+		background-image:url(images/google+.png);
+	}
+	div.foresst{
+		background-image:url(images/forrst.png);
+	}
+	div.drible{
+		background-image:url(images/dribbble.png);
+	}
+}
