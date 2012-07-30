@@ -52,7 +52,12 @@ $(function(){
 
 function environment(){
 	
-	document.getElementById('title-about').style.width='0px';	
+	document.getElementById('title-about').style.width='0px';
+	document.getElementById('title-about').style.height='0px';
+	document.getElementById('content-service').style.height='0px';
+	document.getElementById('content-member').style.height='0px';
+	document.getElementById('content-envir').style.height='190px';
+		
 	document.getElementById('environment').style.color='#fff';	
 	document.getElementById('content-service').style.opacity='0';
 	document.getElementById('service').style.color='#8e8e8e';		
@@ -64,6 +69,10 @@ function environment(){
 function service(){
 	
 	document.getElementById('title-about').style.width='0px';	
+	document.getElementById('title-about').style.height='0px';	
+	document.getElementById('content-service').style.height='170px';
+	document.getElementById('content-envir').style.height='0px';
+	document.getElementById('content-member').style.height='0px';
 	document.getElementById('service').style.color='#fff';	
 	document.getElementById('content-service').style.opacity='1';	
 	document.getElementById('content-envir').style.opacity='0';
@@ -75,6 +84,11 @@ function service(){
 function member(){
 	
 	document.getElementById('title-about').style.width='0px';	
+	document.getElementById('title-about').style.height='0px';
+	document.getElementById('content-service').style.height='0px';
+	document.getElementById('content-envir').style.height='0px';
+	document.getElementById('content-member').style.height='150px';
+	
 	document.getElementById('member').style.color='#fff';	
 	document.getElementById('content-member').style.opacity='1';	
 	document.getElementById('content-envir').style.opacity='0';
@@ -87,12 +101,17 @@ function member(){
 function mainabout(){
 	
 	document.getElementById('content-envir').style.opacity='0';	
-	document.getElementById('environment').style.color='#8e8e8e';	
+	document.getElementById('environment').style.color='#fff';	
 	document.getElementById('content-service').style.opacity='0';
-	document.getElementById('service').style.color='#8e8e8e';
-	document.getElementById('member').style.color='#8e8e8e';	
-	document.getElementById('content-member').style.opacity='0';			
+	document.getElementById('service').style.color='#fff';
+	document.getElementById('member').style.color='#fff';	
+	document.getElementById('content-member').style.opacity='0';
+	document.getElementById('content-service').style.height='0px';
+	document.getElementById('content-envir').style.height='0px';
+	document.getElementById('content-member').style.height='0px';			
 	document.getElementById('title-about').style.width='830px';
+	document.getElementById('title-about').style.height='360px';	
+	document.getElementById('comment').style.zinedx='-1';	
 }
 
 /*************************** START PROJECT *************************/

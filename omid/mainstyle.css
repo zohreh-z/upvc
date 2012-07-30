@@ -250,40 +250,36 @@ div.slider div.img4{
 }
 /***************************************** START CSS ABOUT *****************************/
 /***************************************** START SUBMENU ABOUT *****************************/
-.menu ul ul{
+.nav ul ul{
 	float:left !important;
-	margin-top:-40px;
+	margin-top:-25px;
 }
 
-.menu li li{
+.nav li li{
 	float:none;
+	padding-right:5px;
 	background:none !important;
 }
 
-.menu li.about{
-	width:400px;
-	text-align:right;
+.nav ul li.about-li{
+	width:350px;
+
 }
 
-.menu  li.about > a{
-	color:#fff;
-}
+/*
+.nav  ul li.about-li  a{
+	color:#f00;
+	text-align:right;
+}*/
 /***************************************** END SUBMENU ABOUT *****************************/
 /***************************************** START OCNTENT-ABOUT *****************************/
 div.content-about , .content-contact{
-	position:fixed;
-	top:200px;
-	right:250px;
-	min-height:350px;/*delete*/
-	overflow:hidden;/*delete*/
-	
+	margin:150px auto 0;
+	position:relative;
 }
 
 div.title-about{
-	position:fixed;
-	top:200px;
-	right:240px;
-	z-index:2;
+	margin:0 auto;
 	overflow:hidden;
 	height:360px;
 
@@ -357,20 +353,19 @@ div.member{
 	z-index:2;
 	color:#fff;
 	text-align:justify;
+	height:0;
 	
-	-webkit-transition:all 1s;
-	-moz-transition:all 1s; /* FireFox */
-	-ms-transition:all 1s;/* IE */
-	-o-transition:all 1s;/* Opera */
-	transition:all 1s;/* Opera */
+	-webkit-transition:all 0.8s;
+	-moz-transition:all 0.8s; /* FireFox */
+	-ms-transition:all 0.8s;/* IE */
+	-o-transition:all 0.8s;/* Opera */
+	transition:all 0.8s;/* Opera */
 }
 
-#content-service{
-	margin-top:-250px;
-}
-
-#content-member{
-	margin-top:-220px;
+#comment{
+	position:absolute;
+	top:0;
+	z-index:-1;
 }
 /************************************************************* END CSS ABOUT ******************************************/
 /*********************************************START CSS CONTENT CONATC ******************************************/

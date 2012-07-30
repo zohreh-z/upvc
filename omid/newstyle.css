@@ -1,5 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
+.abolut-a{
+	color:#0f0;
+}
+
 #loading *{
 	opacity: 0;
 	position: fixed;
