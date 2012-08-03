@@ -265,12 +265,6 @@ div.slider div.img4{
 	width:350px;
 
 }
-
-/*
-.nav  ul li.about-li  a{
-	color:#f00;
-	text-align:right;
-}*/
 /***************************************** END SUBMENU ABOUT *****************************/
 /***************************************** START OCNTENT-ABOUT *****************************/
 div.content-about , .content-contact{
@@ -528,12 +522,6 @@ div.timeline_seperator{
 	margin:0 auto;
 }
 .content-project{
-/*	position:absolute;
-	top:170px;
-	left:230px;
-	bottom:0;
-	*/
-		/*outline:1px dashed red;*/
 	position:relative;
 	margin:170px auto 0;
 	height:420px;
@@ -549,11 +537,12 @@ div.timeline_seperator{
 }
 
 .share-prj{
-	/*outline:1px dashed blue;*/
+	position:relative;
+	cursor:pointer;
 	opacity:0.4;
+	margin-right:5px;
+	margin-top:2px;
 	width:160px;
-	margin-left:10px;
-	margin-bottom:0px;
 	color:#fff;
 	
 	-webkit-transition: all 0.5s;
@@ -566,8 +555,7 @@ div.timeline_seperator{
 .text-prj{
 	position:absolute;
 	top:90px;
-	right:10px;
-	bottom:0;
+	right:0px;
 	width:inherit;
 	height:0px;
 	overflow:hidden;
@@ -579,51 +567,10 @@ div.timeline_seperator{
 	
 	-webkit-transition:all 0.5s;
 }
-
-.p2{
-	right:180px;
-}
-
-.p3{
-	right:350px;
-}
-
-.p4{
-	right:520px;
-}
-
-.p5{
-	right:690px;
-}
-
-.p6{
-	top:195px;
-}
-
-.p7{
-	top:305px;
-}
-
-.p8{
-	top:410px;
-}
-
 .share-prj:hover .text-prj{
-	top:70px;
+	top:67px;
 	height:25px;
 	opacity:0.5;
-}
-
-.share-prj:hover .row2{
-	top:172px;
-}
-
-.share-prj:hover .row3{
-	top:282px;
-}
-
-.share-prj:hover .row4{
-	top:390px;
 }
 
 .share-prj:hover{
