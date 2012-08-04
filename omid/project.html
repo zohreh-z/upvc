@@ -21,6 +21,14 @@
 			setTimeout(function(){
 				document.getElementById('loading').style.display='none';
 			},1500)
+			for (i=0;i<100;i++)
+				if($click = document.getElementsByClassName("share-prj").item(i))
+				{
+					$click.onclick = function(){
+						alert("hello ");
+					}
+				}
+
 		}
 	</script>
 
