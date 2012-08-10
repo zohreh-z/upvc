@@ -15,6 +15,10 @@
 	z-index: 5;
 
 	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-ms-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
 }
 
 body.preload #loading *{
@@ -41,7 +45,7 @@ body.preload #loading *{
 	margin:auto;
 
 	-moz-animation:spinPulse 1s infinite ease-in-out;
-	-webkit-animation:spinPulse 1s infinite linear;
+	-webkit-animation:spinPulse 1s infinite ease-in-out;/* linear;*/
 }
 .circle1 {
 	position: fixed;

@@ -64,9 +64,15 @@ function environment(){
 	document.getElementById('content-envir').style.opacity='1';	
 	document.getElementById('member').style.color='#8e8e8e';	
 	document.getElementById('content-member').style.opacity='0';	
+	document.getElementById('content-envir').style.zIndex='2';
+	document.getElementById('comment').style.zIndex='2';
+	document.getElementById('title-about').style.zIndex='-1';
 }
 
 function service(){
+	document.getElementById('content-service').style.zIndex='2';
+	document.getElementById('comment').style.zIndex='2';
+	document.getElementById('title-about').style.zIndex='-1';
 	
 	document.getElementById('title-about').style.width='0px';	
 	document.getElementById('title-about').style.height='0px';	
@@ -83,6 +89,9 @@ function service(){
 
 function member(){
 	
+	document.getElementById('content-member').style.zIndex='2';
+	document.getElementById('comment').style.zIndex='2';
+	document.getElementById('title-about').style.zIndex='-1';
 	document.getElementById('title-about').style.width='0px';	
 	document.getElementById('title-about').style.height='0px';
 	document.getElementById('content-service').style.height='0px';
@@ -95,11 +104,11 @@ function member(){
 	document.getElementById('environment').style.color='#8e8e8e';		
 	document.getElementById('content-service').style.opacity='0';
 	document.getElementById('service').style.color='#8e8e8e';
-	
 }
 
 function mainabout(){
-	
+	document.getElementById('comment').style.zIndex='-1';
+	document.getElementById('title-about').style.zIndex='2';
 	document.getElementById('content-envir').style.opacity='0';	
 	document.getElementById('environment').style.color='#fff';	
 	document.getElementById('content-service').style.opacity='0';
@@ -110,18 +119,33 @@ function mainabout(){
 	document.getElementById('content-envir').style.height='0px';
 	document.getElementById('content-member').style.height='0px';			
 	document.getElementById('title-about').style.width='830px';
-	document.getElementById('title-about').style.height='360px';	
-	document.getElementById('comment').style.zinedx='-1';	
+	document.getElementById('title-about').style.height='360px';		
 }
 
 /*************************** START PROJECT *************************/
 function nextpage(){
-	
 	document.getElementById('align-prj').style.width='0px';
-	
 }
 
 function mainprj(){
 	document.getElementById('align-prj').style.width='870px';
 }
 /*************************** END PROJECT *************************/
+/*************************** START CONTACT *************************/
+function displaymap(){
+	document.getElementById('detail').style.opacity='0';
+	document.getElementById('bgmap').style.zIndex='6';
+	document.getElementById('bgmap').style.opacity='1';
+	document.getElementById('detail').style.zIndex='-1';
+//	document.getElementById('detail').style.marginTop='160px';
+//	document.getElementById('detail').style.height='0';
+}
+
+function dislpaycontact(){
+	document.getElementById('detail').style.opacity='1';
+	document.getElementById('bgmap').style.opacity='0';
+	document.getElementById('bgmap').style.zIndex='-1';
+	document.getElementById('detail').style.zIndex='6';
+//	document.getElementById('detail').style.marginTop='0px';
+//	document.getElementById('detail').style.height='350px';
+}

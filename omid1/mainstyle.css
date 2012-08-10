@@ -11,24 +11,13 @@
 }
 
 body{
-	/*position:fixed;
-	left:0;
-	right:0;
-	top:0;
-	bottom:0;
-	z-index:-1;
-	
-	background-image:url('images/b1.jpg');
-	background-size:cover;
-*/	
-/*	font-family:Arial, Helvetica, sans-serif;*/
-	/*position:relative;*/
-    font-family: "My Custom Font";
+/*    font-family: "My Custom Font";*/
+	font-family:tahoma, Helvetica, sans-serif;
 	font-size:25px;
 	color:#8e8e8e;
 	direction:rtl;
-	background-color:#5c5c5c;
-
+	
+	background-color:#4c4c4c;
 }
 
 .dot{
@@ -39,7 +28,6 @@ body{
 	height:auto !important;
 	height:100%;
 	
-	
 	position:fixed;
 	left:0;
 	right:0;
@@ -49,9 +37,9 @@ body{
 		
 	background-image:url('images/pattern_bg_40.png');
 }
-
+/*
 .top{
-	height:200px;/*maybe delete*/
+	height:200px;
 	width:100%;
 	position:fixed;
 	top:0px;
@@ -62,11 +50,11 @@ body{
 	background-image:url('images/bg-menu.png');
 	
 	-webkit-transition:all 0.8s; /* Safari and Chrome */
-	-moz-transition:all 0.8s; /* FireFox */
-	-ms-transition:all 0.8s;/* IE */
-	-o-transition:all 0.8s;/* Opera */
-	transition:all 0.8s;/* Opera */
-}
+/*	-moz-transition:all 0.8s; /* FireFox */
+/*	-ms-transition:all 0.8s;/* IE */
+/*	-o-transition:all 0.8s;/* Opera */
+/*	transition:all 0.8s;/* Opera */
+/*}
 
 a.hide{
 	display:block;
@@ -98,7 +86,7 @@ a.show{
 	background-position:0 -24px;
 }
 /***************************************** MENU TOP **************************/
-.top .menu{
+/*.top .menu{
 	margin:0 auto;
 	margin-right:140px;
 	height:60px;
@@ -129,12 +117,12 @@ a.show{
 	
 	-webkit-transition:all 1s;
 	-moz-transition:all 1s; /* FireFox */
-	-ms-transition:all 1s;/* IE */
-	-o-transition:all 1s;/* Opera */
-	transition:all 1s;/* Opera */
+/*	-ms-transition:all 1s;/* IE */
+/*	-o-transition:all 1s;/* Opera */
+/*	transition:all 1s;/* Opera */
 	
 /*    font-family: "My Custom Font";*/
-	font-family:Tahoma, Geneva, sans-serif;
+/*	font-family:Tahoma, Geneva, sans-serif;
 	font-weight:bold;
 }
 
@@ -145,7 +133,7 @@ a.show{
 
 .menu li.nobg{
 	background:none;/*kar nermikonad*/
-}
+/*}
 
 .menu li.nobg a{
 	color:#fff;
@@ -223,7 +211,6 @@ div.slider div.img1{
 	background-repeat: no-repeat;
 	width:1366px;
 	height:666px;
-	
 }
 
 div.slider div.img2{
@@ -231,7 +218,6 @@ div.slider div.img2{
 	background-repeat: no-repeat;
 	width:1366px;
 	height:666px;
-	
 }
 
 div.slider div.img3{
@@ -239,7 +225,6 @@ div.slider div.img3{
 	background-repeat: no-repeat;
 	width:1366px;
 	height:666px;
-	
 }
 
 div.slider div.img4{
@@ -252,7 +237,7 @@ div.slider div.img4{
 /***************************************** START SUBMENU ABOUT *****************************/
 .nav ul ul{
 	float:left !important;
-	margin-top:-25px;
+	margin-top:-30px;
 }
 
 .nav li li{
@@ -262,14 +247,28 @@ div.slider div.img4{
 }
 
 .nav ul li.about-li{
-	width:350px;
-
+	width:340px;
 }
+
 /***************************************** END SUBMENU ABOUT *****************************/
 /***************************************** START OCNTENT-ABOUT *****************************/
-div.content-about , .content-contact{
-	margin:150px auto 0;
-	position:relative;
+div.content-about {
+	position:fixed;
+	width:950px;
+	height:450px;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	margin:auto;
+}
+
+div.bg-content{
+	background-color:#222;
+	border-radius:5px;
+	padding:5px 8px;
+	width:890px;
+	height:360px;
 }
 
 div.title-about{
@@ -287,7 +286,6 @@ div.title-about{
 .share-property{
 	width:258px;
 	height:130px;
-	z-index:2;
 	opacity:0.4;
 	color:#fff;
 	text-align:justify;
@@ -311,6 +309,8 @@ div.title-about{
 
 .share-property p{
 	padding-top:5px;
+	line-height:1.5;
+	font-size:15px;
 }
 
 div.environment{
@@ -331,7 +331,6 @@ div.service{
 	
 	margin-right:288px;
 	padding-top:1px;
-
 }
 
 div.member{
@@ -344,10 +343,10 @@ div.member{
 
 .share-content{
 	opacity:0;
-	z-index:2;
 	color:#fff;
 	text-align:justify;
 	height:0;
+	font-size:16px;
 	
 	-webkit-transition:all 0.8s;
 	-moz-transition:all 0.8s; /* FireFox */
@@ -358,25 +357,38 @@ div.member{
 
 #comment{
 	position:absolute;
-	top:0;
+	top:80px;
+	left:50px;
+	right:0;
+	line-height:2;
 	z-index:-1;
+	overflow:hidden;
+	height:300px;
+	width:830px;
+	margin:auto;
 }
 /************************************************************* END CSS ABOUT ******************************************/
 /*********************************************START CSS CONTENT CONATC ******************************************/
 .content-contact{
-	height:440px;
-	top:170px;
+	width:830px;
+	height:435px;
+	position:fixed;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	margin:auto;
 }
 
-.buttom-top{
+.buttom-top ,.buttom-down{
 	background-image:url('images/pil_opp_ansatte_liste.png');
 	background-repeat:no-repeat;
 	background-position:center top;
+	
 	padding-top:1px;
-
-	height:25px;
+	height:40px;
 }
-
+/*
 div.timeline_seperator{
 	background:#ffffff;
 	height:1px;
@@ -391,44 +403,55 @@ div.timeline_seperator{
 	-khtml-opacity:0.20;
 	opacity:0.20
 }
-
-
+*/
 .center{
-	height:390px;
+	height:360px;
+	background-color:#222;
+	border-radius:5px;
+	padding-right:15px;
+	
+	
+	
 }
 /*********************************************START CSS CONTENT CONATC MENU ******************************************/
-.center ul{
+/*.center ul{
 	text-align:right;
-	width:830px;
-	height:390px;
+	width:250px;
+	height:360px;
 	overflow:hidden;
 	list-style-type:none;
-	position:fixed;
-	z-index:2;
+	/*position:fixed;*/
+/*	z-index:2;
 }
 
 .center li{
 	padding-right:20px;
-	height:55px;
-	width:810px;
+	height:60px;
+	width:220px;
 	cursor:pointer;
+	
+	line-height:60px;
+	font-family:"Times New Roman", Times, serif;
+	letter-spacing:2px;
 }
 
 .center li a{
 	text-decoration:none;
-	color:#bbb;
+	color:#fff;
 	display:block;
 	
-	-webkit-transition:all 1s;
-	-moz-transition:all 1s; /* FireFox */
-	-ms-transition:all 1s;/* IE */
-	-o-transition:all 1s;/* Opera */
-	transition:all 1s;/* Opera */
-}
+	font-size:20px;
+	letter-spacing:1px;
+
+	-webkit-transition:all 0.7s;
+	-moz-transition:all 0.7s; /* FireFox */
+/*	-ms-transition:all 0.7s;/* IE */
+/*	-o-transition:all 0.7s;/* Opera */
+/*	transition:all 0.7s;/* Opera */
+/*}
 
 .center li:hover a{
-	color:#fff;
-	
+	color:#aaa;
 }
 
 .center li:hover{
@@ -438,7 +461,8 @@ div.timeline_seperator{
 }
 
 .center li.header{
-	font-size:36px;
+	font-size:30px;
+	font-weight:bold;
 	color:#8e8e8e;
 	padding-right:10px;
 	cursor:default;
@@ -448,13 +472,123 @@ div.timeline_seperator{
 /********************************************* END CSS CONTENT CONATC MENU ******************************************/
 .buttom-down{
 	background-image:url('images/pil_ned_ansatte_liste.png');
+	margin-top:10px;
+}
+.details{
+	height:350px;
+	margin:0 auto;
+	margin-top:10px;
+	padding-top:1px;
+	
+	-webkit-transition:all 1s;
+	-moz-transition:all 1s;
+	-ms-transition:all 1s;
+	-o-transition:all 1s;
+	transition:all 1s;
+}
+.right-detail{
+	margin-top:15px;
+	font-size:15px;
+	/*font-family:tahoma, Helvetica, sans-serif;*/
+	line-height:1.7;
+
+	text-align:justify;
+	color:#aaa;
+}
+.left-detail{
+	margin-top:15px;
+}
+/**********************************FORM CONTACT *********************************/
+.contact-form {
+	margin: 0 auto;
+	position: relative;
+	text-align:right;
+}
+
+button {
+	background-image:url('images/submit.png');
+	background-repeat:no-repeat;
+	
+	height:25px;
+	width:75px;
+	border: none;
+	cursor:pointer;
+}
+
+.email{
+	text-align:left;
+}
+
+.right-detail a{
+	color:#ccc;
+	text-decoration:none;
+}
+
+.name-contact , .email-contact , textarea
+{
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	
+	-webkit-transition: all 1.5s ease;
+	-moz-transition: all 1.5s ease;
+	-ms-transition: all 1.5s ease;
+	-o-transition: all 1.5s ease;
+	transition: all 1.5s ease;
+	
+	background:#333 url('images/8bcLQqF.png') no-repeat;
+	border: 1px solid #c8c8c8;
+	font: 17px Helvetica, Arial, sans-serif;
+	padding: 10px 35px 10px 25px;
+	color: rgba(0,0,0,0.3);
+	text-shadow:1px 1px 0px #ccc,-1px -1px 0px #222;
+}
+
+.name-contact:focus , .email-contact:focus , .textarea:focus
+{
+	background-color: #fff;
+	color:#aaa;
+	text-shadow:none;
+	outline: none;
+}
+
+.name-contact 
+{ 
+	background-position:215px 10px !important;
+}
+
+.email-contact 
+{ 
+	background-position:315px -70px !important;
+}
+
+.textarea 
+{
+	 background-position:320px -110px !important; 
+}
+
+.bg-map{
+	widows:350px;
+	height:360px;
+	position:fixed;
+	z-index:-1;
+	
+	background-image:url('images/dr-pooya-location.png');
 	background-repeat:no-repeat;
 	background-position:center top;
+
+	-webkit-transition:all 1s;
+	-moz-transition:all 1s;
+	-ms-transition:all 1s;
+	-o-transition:all 1s;
+	transition:all 1s;
 	
-	height:20px;
 }
+
 /*********************************************START CSS CONTENT CONATC PAGE EMIK ******************************************/
-.bg-emik{
+/*.bg-emik{
 	position:fixed;
 	left:0;
 	right:0;
@@ -480,7 +614,7 @@ div.timeline_seperator{
 }
 /*********************************************END CSS CONTENT CONATC PAGE EMIK ******************************************/
 /*********************************************START CSS CONTENT CONATC PAGE 1-EMIK(...حسینی پور) ******************************************/
-.bg1-emik{
+/*.bg1-emik{
 	position:fixed;
 	left:0;
 	right:0;
@@ -492,7 +626,7 @@ div.timeline_seperator{
 }
 /*********************************************END CSS CONTENT CONATC PAGE 1-EMIK(...حسینی پور) ******************************************/
 /*********************************************START CSS CONTENT CONATC PAGE 2-EMIK(...حسینی پور) ******************************************/
-.bg2-emik{
+/*.bg2-emik{
 	position:fixed;
 	left:0;
 	right:0;
@@ -504,7 +638,7 @@ div.timeline_seperator{
 }
 /*********************************************END CSS CONTENT CONATC PAGE 2-EMIK(...حسینی پور) ******************************************/
 /*********************************************START CSS CONTENT CONATC PAGE 2-EMIK(...حسینی پور) ******************************************/
-.bg3-emik{
+/*.bg3-emik{
 	position:fixed;
 	left:0;
 	right:0;
@@ -578,3 +712,39 @@ div.timeline_seperator{
 }
 /********************************************* START CSS SLIDER PROJECT ******************************************/
 /*********************************************END CSS CONTENT PROJECT ******************************************/
+div.con-document{
+	position: fixed;
+	z-index: 6;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	width:915px;
+	height:390px;
+	margin:auto;
+}
+
+div.con-document div.buttom-down , div.con-document div.buttom-top{
+	margin-right:40px;
+}
+
+div.content-document{
+	height:300px;
+	width:inherit;
+	padding-top:10px;
+	padding-left:70px;
+	border:1px solid #111;
+	border-radius:5px;
+	
+	background-color:#222;
+}
+
+div.content-document a{
+	margin-left:-33px;
+}
+
+div.content-document div.img-squar{
+	width:450px;
+	padding-top:10px;
+	margin:auto;
+}

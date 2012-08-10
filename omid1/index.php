@@ -47,7 +47,7 @@
 			<ul class="mla">
 				<li class="home-li"><a href="#">خانه</a></li>
 				<li class="about-li"><a href="about.html">درباره ما</a></li>
-				<li class="port-li"><a href="#">گواهینامه ها</a></li>
+				<li class="port-li"><a href="document.html">گواهینامه ها</a></li>
 				<li class="contanct-li"><a href="project.html">پروژه ها </a></li>
 				<li class="contanct-li"><a href="#"> خدمات</a></li>
 				<li class="contanct-li"><a href="#"> پیوند ها</a></li>
