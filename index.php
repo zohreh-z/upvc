@@ -6,7 +6,7 @@
 <html lang="en-US">
 <head>
 	<meta charset="utf-8" />
-	<title>EMIK COMPANY</title>
+	<title>آلبن</title>
 	<link type="text/css" rel="stylesheet" href="reset.css" />
 	<link type="text/css" rel="stylesheet" href="1styles.css" />
 	<link rel="stylesheet/less" type="text/css" href="style.less" />
@@ -38,27 +38,26 @@
 		</div>
 	</div>
 	<header>
-	<section class="nav-container">
-	
+	<section class="nav-container">	
 		<div class="nav">
-			<div class="logo mla mra">
-				<h1>EMIK COMPANY</h1>
-			</div>
+			
 			<ul class="mla">
-				<li class="home-li"><a href="#">خانه</a></li>
-				<li class="about-li"><a href="about.html">درباره ما</a></li>
-				<li class="port-li"><a href="document.html">گواهینامه ها</a></li>
-				<li class="contanct-li"><a href="project.html">پروژه ها </a></li>
-				<li class="contanct-li"><a href="#"> خدمات</a></li>
-				<li class="contanct-li"><a href="#"> پیوند ها</a></li>
-				<li class="contanct-li"><a href="contact.html"> تماس با ما</a></li>
+				<li><a href="./">خانه</a></li>
+				<li><a href="about.html">درباره ما</a></li>
+				<li><a href="document.html">گواهینامه ها</a></li>
+				<li><a href="project.html">پروژه ها </a></li>
+				<li><a href="#"> خدمات</a></li>
+				<li><a href="#"> پیوند ها</a></li>
+				<li><a href="contact.html"> تماس با ما</a></li>
 			</ul>		
-<!--			<div class="bot-bg"></div>-->
 		</div>
 				
 	</section>
 	</header>
 	<section class='slideshow'>
+    	<div class="logo mla mra">
+				<h1>ALBEN COMPANY</h1>
+			</div>
 		<div class="noise"></div>
 		<section class="backimg">
 

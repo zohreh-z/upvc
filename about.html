@@ -3,45 +3,67 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>درباره ما</title>
-<link type="text/css" rel="stylesheet" href="1style.css" />
-<link type="text/css" rel="stylesheet" href="reset.css" />
-<link type="text/css" rel="stylesheet" href="mainstyle.css" />
-<link type="image/x-icon" rel="shortcut icon" href="favicon.ico" />
-<!--[if IE]>
-		<script type="text/javascript" src="js/html5.js"></script>
-	<![endif]-->
-<script type="text/javascript" src="js/menu.js"></script>
+
+	<link type="text/css" rel="stylesheet" href="reset.css" />
+	<link type="text/css" rel="stylesheet" href="1styles.css" />
+	<link rel="stylesheet/less" type="text/css" href="style.less">
+	<link type="text/css" rel="stylesheet" href="newstyle.css" />
+	<link type="image/x-icon" rel="shortcut icon" href="favicon.ico" />
+	<link type="text/css" rel="stylesheet" href="mainstyle.css" />	
+	<script src="scripts/less.js" type="text/javascript"></script>
+	<!--[if IE]>
+			<script type="text/javascript" src="js/html5.js"></script>
+		<![endif]-->
+	<script type="text/javascript" src="scripts/script.js"></script>
+	<script type="text/javascript">
+		window.onload = function(){
+			document.body.className = '';
+			setTimeout(function(){
+				document.getElementById('loading').style.display='none';
+			},1500)
+		}
+	</script>
 
 </head>
 
-<body>
-
-<section>
-	<header class="top" id="top">
-		<nav class="menu f1">
-			<ul>
-				<li><a href="index.html">صفحه اصلی</a></li>
-				<li class="about">
-					<a href="#" onClick="mainabout()">درباره </a>
-					<ul class="f1">
-						<li><a href="#" onClick="environment()" id="environment">محیط شرکت</a></li>
-						<li><a href="#" onClick="service()" id="service">خدمات شرکت</a></li>
-						<li><a href="#" onClick="member()" id="member">اعضای شرکت</a></li>
+<body class="preload">
+	<div id="loading">
+		<div class="con">
+			<div class="circle"></div>
+			<div class="circle1"></div>
+		</div>
+	</div>
+	<header>
+		<div class="logo mla mra">
+			<h1>ALBEN COMPANY</h1>
+		</div>
+	<section class="nav-container">
+	
+		<div class="nav">
+			<ul class="mla">
+				<li><a href="index.php">خانه</a></li>
+				<li class="about-li"><a href="#" style="text-align:right;" onClick="mainabout()">درباره ما</a>
+					<ul>
+						<li><a href="#" onClick="environment()" id="environment" style="font-size:12px;">محیط شرکت</a></li>
+						<li><a href="#" onClick="service()" id="service" style="font-size:12px;">خدمات شرکت</a></li>
+						<li><a href="#" onClick="member()" id="member" style="font-size:12px;">اعضای شرکت</a></li>
 					</ul>
 				</li>
-				<li><a href="#">پروژه ها</a></li>
-				<li><a href="#">محصولات</a></li>
-				<li><a href="#">خدمات</a></li>
-				<li><a href="contact.html">تماس با ما</a></li>
-			</ul>	
-		</nav>
+				<li><a href="document.html">گواهینامه ها</a></li>
+				<li><a href="project.html">پروژه ها </a></li>
+				<li><a href="#"> خدمات</a></li>
+				<li><a href="#"> پیوند ها</a></li>
+				<li><a href="contact.html"> تماس با ما</a></li>
+			</ul>		
+		</div>
+				
+	</section>
 	</header>
-	<!--********************************** END TOP ************************************-->
-	<a href="#" onclick="hidemenu()" class="hide" id="hide"></a>
-	<a href="#" onclick="showmenu()" class="show" id="show"></a>	
-	<h1 class="logo"></h1>
-	<div class="content-about w21 cover" id="content-about">
-	
+
+	<div class="content-about  f2 cover" id="content-about">
+		<div class="dot"></div>
+        <div class="buttom-top"></div>
+        <div class="bg-content" id="bg-content">
 		<div class="title-about w21 cover" id="title-about">
 			<div class="environment curser share-property" onClick="environment()">
 				<h2>محیط شرکت</h2>
@@ -67,7 +89,7 @@
 				</p>
 			</div>
 		</div>
-		
+		<div id="comment">
 		<article class="share-content" id="content-envir">
 			<h2>محیط شرکت</h2>
 			<p>
@@ -95,10 +117,25 @@ MAD به خودی خود یک شرکت کربن خنثی، و ما مصمم هس
 
 			</p>
 		</div>
-		
+		</div>
+        </div>
+    	<div class="buttom-down"></div>
 	</div>
-	<div class="dot"></div>
-</section>
-
+<footer>
+		<div class="desc mr12">
+			<p class="left">social links:</p>
+			<div class="social ml2">
+			<div class="google">
+				<div class="tooltip">google plus</div>
+			</div>
+			<div class="foresst">
+				<div class="tooltip">foresst</div>
+			</div>
+			<div class="drible">
+				<div class="tooltip">drible</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+</footer>
 </body>
 </html>

@@ -9,21 +9,25 @@ header {
 	background-image:url(images/top_b1g.png);
 }
 
-section.slideshow{
-	h1.logo {
+div.logo  {
 		position :fixed;
-		right    :3%;
-		bottom   :90px;
-		width    :200px;
-		height   :65px;
+		right    :0;
+		bottom   :50px;
+		width    :290px;
+		height   :165px;
 		overflow :hidden;
+		
+		
+		background-size  :100% 100%;
+		background-image :url(images/mainlogo.png);
+
+	h1{
 		text-indent      :1000px;
 		white-space      :nowrap;
-/*		background-size  :100% 100%;
-		background-image :url(images/logo.png);*/
-
 	}
+}
 
+section.slideshow{
 	div.noise {
 		position :fixed;
 		top      :0;
@@ -65,9 +69,6 @@ section.slideshow{
 			width:900px;
 			min-height:20px;
 			padding-top:1px;
-/*			background-color:#111;
-/*			border-radius:40px;*/
-/*			background:url(images/nav-bg.png) repeat-x;*/
 
 			div.logo{
 /*				background-image:url(images/logo.png);*/
@@ -85,9 +86,6 @@ section.slideshow{
 				}
 			}
 			ul{
-/*				margin-top:10px;
-/*				width:590px;*/
-
 				li{
 					background-image:url(images/li-bg.png);
 					height:38px;

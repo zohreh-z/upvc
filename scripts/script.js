@@ -137,8 +137,6 @@ function displaymap(){
 	document.getElementById('bgmap').style.zIndex='6';
 	document.getElementById('bgmap').style.opacity='1';
 	document.getElementById('detail').style.zIndex='-1';
-//	document.getElementById('detail').style.marginTop='160px';
-//	document.getElementById('detail').style.height='0';
 }
 
 function dislpaycontact(){
@@ -146,6 +144,4 @@ function dislpaycontact(){
 	document.getElementById('bgmap').style.opacity='0';
 	document.getElementById('bgmap').style.zIndex='-1';
 	document.getElementById('detail').style.zIndex='6';
-//	document.getElementById('detail').style.marginTop='0px';
-//	document.getElementById('detail').style.height='350px';
 }
