@@ -43,7 +43,7 @@
 			
 			<ul class="mla">
 				<li><a href="./">خانه</a></li>
-				<li><a href="about.html">درباره ما</a></li>
+				<li><a href="about.php">درباره ما</a></li>
 				<li><a href="document.html">گواهینامه ها</a></li>
 				<li><a href="project.html">پروژه ها </a></li>
 				<li><a href="#"> خدمات</a></li>
@@ -67,21 +67,8 @@
 
 		</section>
 	</section>
-	<footer>
-		<div class="desc mr12">
-			<p class="left">social links:</p>
-			<div class="social ml2">
-			<div class="google">
-				<div class="tooltip">google plus</div>
-			</div>
-			<div class="foresst">
-				<div class="tooltip">foresst</div>
-			</div>
-			<div class="drible">
-				<div class="tooltip">drible</div>
-			</div>
-			<div class="clear"></div>
-		</div>
-	</footer>
+	<?php
+		include "inc/footer.php";
+	?>
 </body>
 </html>
