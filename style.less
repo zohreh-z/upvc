@@ -16,9 +16,7 @@ div.logo  {
 		width    :290px;
 		height   :165px;
 		overflow :hidden;
-		
-		
-		background-size  :100% 100%;
+	
 		background-image :url(images/mainlogo.png);
 
 	h1{
@@ -69,22 +67,7 @@ section.slideshow{
 			width:900px;
 			min-height:20px;
 			padding-top:1px;
-
-			div.logo{
-/*				background-image:url(images/logo.png);*/
-				background-size:100% 100%;
-				background-position:center top;
-				background-repeat:no-repeat;
-			  	width: 150px;
-			 	height: 60px;
-				float:left;
-				overflow:hidden;
-
-				h1{
-					text-indent:-50000px;
-					white-space: nowrap;
-				}
-			}
+			
 			ul{
 				li{
 					background-image:url(images/li-bg.png);
@@ -95,12 +78,11 @@ section.slideshow{
 					
 					a{
 						display:block;
-						padding-bottom:10px;
-						padding-top:10px;
+						padding:10px;
 						text-decoration:none;
 						color:#FFF;
-						font-size:15px;
-						letter-spacing:2px;
+						font-size:17px;
+						/*letter-spacing:2px;*/
 						font-family:"Times New Roman", Times, serif;
 						font-weight:bold;
 						text-align:center;
@@ -160,29 +142,44 @@ footer {
 	}
 
 	div.social > div{
-		height:23px;
-		width:24px;
+		height:28px;
+		width:30px;
 		float: left;
-		background-repeat:no-repeat;
 		margin-left: 10px;
 		margin-top: 15px;
 		cursor: pointer;
+		
+		background-image:url(images/social-icons.png);
+		background-repeat:no-repeat;
+		
+		-webkit-transition:all 0.7s;
+		-moz-transition:all 0.7s;
+		-ms-transition:all 0.7s;
+		-o-transition:all 0.7s;
+		transition:all 0.7s;
 	}
 
 	div.social > div > div{
-		height:23px;
-		width:24px;
+		height:28px;
+		width:30px;
 		float: left;
 		display: none;
 	}
 
 	div.google{
-		background-image:url(images/google+.png);
+		background-position:-63px 0;
 	}
-	div.foresst{
-		background-image:url(images/forrst.png);
+	
+	div.social > div:hover{
+		opacity:0.5;
+		margin-left: 9px;
+		margin-top: 14px;
+	}
+	
+	div.facebook{
+		background-position:-32px 0;
 	}
 	div.drible{
-		background-image:url(images/dribbble.png);
+		background-position:0 0;
 	}
 }
