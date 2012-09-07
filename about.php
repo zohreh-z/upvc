@@ -49,11 +49,11 @@
 						<li><a href="#" onClick="member()" id="member" style="font-size:12px;">اعضای شرکت</a></li>
 					</ul>
 				</li>
-				<li><a href="document.html">گواهینامه ها</a></li>
-				<li><a href="project.html">پروژه ها </a></li>
+				<li><a href="document.php">گواهینامه ها</a></li>
+				<li><a href="project.php">پروژه ها </a></li>
 				<li><a href="#"> خدمات</a></li>
 				<li><a href="#"> پیوند ها</a></li>
-				<li><a href="contact.html"> تماس با ما</a></li>
+				<li><a href="contact.php"> تماس با ما</a></li>
 			</ul>		
 		</div>
 				

@@ -41,13 +41,13 @@
 	
 		<div class="nav">
 			<ul class="mla">
-				<li class="home-li"><a href="index.php">خانه</a></li>
+				<li><a href="index.php">خانه</a></li>
 				<li><a href="about.php">درباره ما</a></li>
-				<li><a href="document.html">گواهینامه ها</a></li>
+				<li><a href="document.php">گواهینامه ها</a></li>
 				<li><a href="#" onClick="mainprj()">پروژه ها </a></li>
 				<li><a href="#"> خدمات</a></li>
 				<li><a href="#"> پیوند ها</a></li>
-				<li class="contanct-li"><a href="contact.html"> تماس با ما</a></li>
+				<li><a href="contact.php"> تماس با ما</a></li>
 			</ul>		
 		</div>
 				
@@ -149,21 +149,8 @@
 		</div>
 	</div>
 </section>
-<footer>
-		<div class="desc mr12">
-			<p class="left">social links:</p>
-			<div class="social ml2">
-			<div class="google">
-				<div class="tooltip">google plus</div>
-			</div>
-			<div class="foresst">
-				<div class="tooltip">foresst</div>
-			</div>
-			<div class="drible">
-				<div class="tooltip">drible</div>
-			</div>
-			<div class="clear"></div>
-		</div>
-	</footer>
+<?php
+	include "inc/footer.php";
+?>
 </body>
 </html>

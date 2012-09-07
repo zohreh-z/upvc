@@ -45,8 +45,8 @@
 			<ul class="mla">
 				<li><a href="./">خانه</a></li>
 				<li><a href="about.php">درباره ما</a></li>
-				<li><a href="document.html">گواهینامه ها</a></li>
-				<li><a href="project.html">پروژه ها </a></li>
+				<li><a href="document.php">گواهینامه ها</a></li>
+				<li><a href="project.php">پروژه ها </a></li>
 				<li><a href="#"> خدمات</a></li>
 				<li><a href="#"> پیوند ها</a></li>
 				<li><a href="contact.php"> تماس با ما</a></li>

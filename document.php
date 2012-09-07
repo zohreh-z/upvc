@@ -10,6 +10,7 @@
 	<link type="text/css" rel="stylesheet" href="newstyle.css" />
 	<link type="image/x-icon" rel="shortcut icon" href="favicon.ico" />
 	<link type="text/css" rel="stylesheet" href="mainstyle.css" />
+    <link rel="stylesheet" href="lightbox.css" type="text/css" media="screen" /> <!-- CSS for Lightbox -->
 	<script src="scripts/less.js" type="text/javascript"></script>
 	<!--[if IE]>
 			<script type="text/javascript" src="js/html5.js"></script>
@@ -23,7 +24,6 @@
 			},1500)
 		}
 	</script>
-    <link rel="stylesheet" href="lightbox.css" type="text/css" media="screen" /> <!-- CSS for Lightbox -->
 </head>
 <body class="preload">
 	<div id="loading">
@@ -43,11 +43,12 @@
 					<li><a href="index.php">خانه</a></li>
 					<li><a href="about.php">درباره ما</a></li>
 					<li><a href="#">گواهینامه ها</a></li>
-					<li><a href="project.html">پروژه ها </a></li>
+					<li><a href="project.php">پروژه ها </a></li>
 					<li><a href="#"> خدمات</a></li>
 					<li><a href="#"> پیوند ها</a></li>
-					<li><a href="contact.html"> تماس با ما</a></li>
-				</ul>		
+					<li><a href="contact.php"> تماس با ما</a></li>
+				</ul>
+                		
 			</div>			
 		</section>
 	</header>
@@ -78,21 +79,8 @@
     </div>
     <div class="buttom-down"></div>
     </div>
-	<footer>
-		<div class="desc mr12">
-			<p class="left">social links:</p>
-			<div class="social ml2">
-			<div class="google">
-				<div class="tooltip">google plus</div>
-			</div>
-			<div class="foresst">
-				<div class="tooltip">foresst</div>
-			</div>
-			<div class="drible">
-				<div class="tooltip">drible</div>
-			</div>
-			<div class="clear"></div>
-		</div>
-	</footer>
+	<?php
+	  include "inc/footer.php";
+	?>
 </body>
 </html>
