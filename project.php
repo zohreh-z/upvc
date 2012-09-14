@@ -12,7 +12,7 @@
 	<link type="image/x-icon" rel="shortcut icon" href="favicon.ico" />
 	<script src="scripts/less.js" type="text/javascript"></script>
 	<!--[if IE]>
-			<script type="text/javascript" src="js/html5.js"></script>
+			<script type="text/javascript" src="scripts/html5.js"></script>
 		<![endif]-->
 	<script type="text/javascript" src="scripts/script.js"></script>
 	<script type="text/javascript">

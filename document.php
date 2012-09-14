@@ -10,10 +10,10 @@
 	<link type="text/css" rel="stylesheet" href="newstyle.css" />
 	<link type="image/x-icon" rel="shortcut icon" href="favicon.ico" />
 	<link type="text/css" rel="stylesheet" href="mainstyle.css" />
-    <link rel="stylesheet" href="lightbox.css" type="text/css" media="screen" /> <!-- CSS for Lightbox -->
+   	<link rel="stylesheet" href="lightbox.css" type="text/css" media="screen" /> <!-- CSS for Lightbox -->
 	<script src="scripts/less.js" type="text/javascript"></script>
 	<!--[if IE]>
-			<script type="text/javascript" src="js/html5.js"></script>
+			<script type="text/javascript" src="scripts/html5.js"></script>
 		<![endif]-->
 	<script type="text/javascript" src="scripts/script.js"></script>
 	<script type="text/javascript">
@@ -52,29 +52,30 @@
 	<div class="con-document">
     	<div class="buttom-top"></div>
 	    <div class="content-document">
-    	<div class="dot"></div>
-     
-        <script type="text/javascript">
-		for(var i = 1 ; i<14; i++){
-			document.write('<a href="images/smallgavahi-png/'+i+'.jpg" rel="lightbox[group1]">');
-			document.write('<img src="images/smallgavahi-png/'+i+'.png" alt="" width:100px; height:200px;/>');
-			document.write('</a>');
-		}
-		</script>
-        <div class="img-squar">
-        <script type="text/javascript">
-		for(var i = 14 ; i<18; i++){
-			document.write('<a href="images/smallgavahi-png/'+i+'.jpg" rel="lightbox[group1]">');
-			document.write('<img src="images/smallgavahi-png/'+i+'.png" alt="" width:125px; height:75px;/>');
-			document.write('</a>');
-		}
-		</script>
-        </div>
-		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/jquery-ui.js"></script>
-		<script type="text/javascript" src="js/lightbox.js"></script> <!-- JavaScript for Lightbox -->
-    </div>
-    <div class="buttom-down"></div>
+	      	<div class="dot"></div>
+	       
+	          <script type="text/javascript">
+	  		for(var i = 1 ; i<14; i++){
+	  			document.write('<a href="images/smallgavahi-png/'+i+'.jpg" rel="lightbox[group1]">');
+	  			document.write('<img src="images/smallgavahi-png/'+i+'.png" alt="" width:100px; height:200px;/>');
+	  			document.write('</a>');
+	  		}
+	  		</script>
+	          <div class="img-squar">
+	          <script type="text/javascript">
+	  		for(var i = 14 ; i<18; i++){
+	  			document.write('<a href="images/smallgavahi-png/'+i+'.jpg" rel="lightbox[group1]">');
+	  			document.write('<img src="images/smallgavahi-png/'+i+'.png" alt="" width:125px; height:75px;/>');
+	  			document.write('</a>');
+	  		}
+	  		</script>
+	          </div>
+	  		<script type="text/javascript" src="scripts/jquery.js"></script>
+	  		<script type="text/javascript" src="scripts/jquery-ui.js"></script>
+	  		<script type="text/javascript" src="scripts/lightbox.js"></script> <!-- JavaScript for Lightbox -->
+        
+    	</div>
+	    <div class="buttom-down"></div>
     </div>
 	<?php
 	  include "inc/footer.php";

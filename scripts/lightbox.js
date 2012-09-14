@@ -138,11 +138,11 @@ lightbox = new Lightbox options
         return false;
       });
       $lightbox.find('.lb-prev').on('click', function(e) {
-        _this.changeImage(_this.currentImageIndex - 1);
+        _this.changeImage(_this.currentImageIndex + 1);
         return false;
       });
       $lightbox.find('.lb-next').on('click', function(e) {
-        _this.changeImage(_this.currentImageIndex + 1);
+        _this.changeImage(_this.currentImageIndex - 1);
         return false;
       });
       $lightbox.find('.lb-loader, .lb-close').on('click', function(e) {
@@ -264,9 +264,9 @@ lightbox = new Lightbox options
       var $lightbox;
       $lightbox = $('#lightbox');
       $lightbox.find('.lb-nav').show();
-      if (this.currentImageIndex > 0) $lightbox.find('.lb-prev').show();
+      if (this.currentImageIndex > 0) $lightbox.find('.lb-next').show();
       if (this.currentImageIndex < this.album.length - 1) {
-        $lightbox.find('.lb-next').show();
+        $lightbox.find('.lb-prev').show();
       }
     };
 
