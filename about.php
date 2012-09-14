@@ -17,10 +17,7 @@
 	<script type="text/javascript" src="scripts/script.js"></script>
 	<script type="text/javascript">
 		window.onload = function(){
-			document.body.className = '';
-			setTimeout(function(){
-				document.getElementById('loading').style.display='none';
-			},1500)
+			document.getElementById('loading').style.display='none';
 		}
 	</script>
 

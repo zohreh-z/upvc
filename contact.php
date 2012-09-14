@@ -17,10 +17,7 @@
 	<script type="text/javascript" src="scripts/script.js"></script>
 	<script type="text/javascript">
 		window.onload = function(){
-			document.body.className = '';
-			setTimeout(function(){
-				document.getElementById('loading').style.display='none';
-			},1500)
+			document.getElementById('loading').style.display='none';
 		}
 	</script>
 
@@ -59,15 +56,16 @@
 		<div class="center cover" >
 			<div class="details right w20" id="detail">
 				<div class="w10 left f3 left-detail">				
-					<form name="contact-form" class="contact-form" action="mail.php" method="post">
+					<form name="contact-form" class="contact-form" action="sendmail.php" method="post">
 						<div>
 							<label>نام:</label><br />
-							<input name="fullName" type="text" class="name-contact" /><br />
+							<input name="fullName" id="fullName" type="text" class="name-contact" /><br />
 							<label> ایمیل:</label><br />
-							<input name="mail" type="text" class="email-contact" size="31" /><br />
+							<input name="mail" id="mail" type="text" class="email-contact" size="31" /><br />
 							<label>پیام:</label><br />
-							<textarea rows="4" cols="30" name="msg" class="textarea"></textarea><br /> <br />                        
-							<button type="submit" name="sub"></button>
+							<textarea rows="4" cols="30" name="msg" id="msg" class="textarea"></textarea><br /> <br />
+							<button type="submit" name="sub" id="sub"></button>
+                            <button type="reset" name="reset" id="reset"></button>
 						</div>
 					</form>
 				</div>			
